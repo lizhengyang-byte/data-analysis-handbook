@@ -1,12 +1,18 @@
-# 数据分析实战手册
+# 📊 数据分析实战手册
 
 > 从 SQL 取数、Pandas 清洗、业务分析到机器学习建模——一本写给数据分析师的数据科学综合讲义。
 >
 > **31章 · 40万+字 · 配套可运行代码 · 对标世界一流教材**
 
-[![GitHub](https://img.shields.io/badge/GitHub-lizhengyang--byte%2Fdata--analysis--handbook-blue)](https://github.com/lizhengyang-byte/data-analysis-handbook)
+![Stars](https://img.shields.io/github/stars/lizhengyang-byte/data-analysis-handbook?style=social)
+![Forks](https://img.shields.io/github/forks/lizhengyang-byte/data-analysis-handbook?style=social)
+![Watchers](https://img.shields.io/github/watchers/lizhengyang-byte/data-analysis-handbook?style=social)
+
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Language](https://img.shields.io/badge/Made%20with-Markdown-orange)](#)
+[![Chapters](https://img.shields.io/badge/Chapters-31-blue)](#-章节目录)
+[![Code](https://img.shields.io/badge/Code-Modules-orange)](#️-配套代码)
+[![Projects](https://img.shields.io/badge/Projects-6-red)](#️-配套代码)
+[![Interview](https://img.shields.io/badge/Interview-80%20Questions-yellow)](#)
 
 ---
 
