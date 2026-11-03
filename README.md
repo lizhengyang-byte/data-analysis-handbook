@@ -1,85 +1,165 @@
 # 数据分析实战手册
 
-> 一本从零基础到高阶实战的完整指南，涵盖数据分析全链路方法论、工具栈、业务场景与面试体系。
+> 从 SQL 取数、Pandas 清洗、业务分析到机器学习建模——一本写给数据分析师的数据科学综合讲义。
+>
+> **31章 · 40万+字 · 配套可运行代码 · 对标世界一流教材**
 
-![Data Analysis Handbook](https://img.shields.io/badge/Data%20Analysis-Handbook-blue)
-![Chapters](https://img.shields.io/badge/Chapters-18-green)
-![Code Examples](https://img.shields.io/badge/Code%20Examples-200%2B-orange)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-2026.11-red)
+[![GitHub](https://img.shields.io/badge/GitHub-lizhengyang--byte%2Fdata--analysis--handbook-blue)](https://github.com/lizhengyang-byte/data-analysis-handbook)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Language](https://img.shields.io/badge/Made%20with-Markdown-orange)](#)
 
 ---
 
-## 关于本书
+## 📖 这本手册是什么
 
-这是一本**面向实战**的数据分析手册，不是教科书，也不是 API 文档。它回答的核心问题是：
+这是一份**系统性的数据科学学习与实战手册**，覆盖数据分析师 / 数据科学家从入门到进阶所需的完整知识体系：
 
-> **当你拿到一份业务数据时，从第一步到最后一份报告，每一步具体该怎么做？**
+- **基础层**：数据分析思维、SQL、Python(Pandas/NumPy)、统计推断、可视化
+- **业务层**：业务分析方法论、A/B 测试与因果推断、用户行为、销售营收、运营分析
+- **工程层**：数据报表自动化、数据仓库、ETL、调度、数据质量
+- **机器学习层**：从特征工程到回归/分类/聚类/时序/NLP/推荐系统/异常检测的完整算法体系
+- **落地层**：模型评估调优、MLOps 部署、6 个端到端项目案例
+- **求职层**：80 道高频面试题与深度答案
 
-全书围绕一个完整的数据分析工作流展开：
+### 适合谁读
 
-```
-明确问题 → 数据获取 → 数据清洗 → 探索分析 → 统计验证 → 可视化呈现 → 业务建议 → 自动化交付
-```
+| 读者 | 收益 |
+|------|------|
+| 在校生 / 转行者 | 建立完整知识体系，配套代码可跑通 |
+| 1-3年数据分析师 | 补齐机器学习与工程化短板 |
+| 业务分析师 | 掌握 SQL+Python+业务分析方法论 |
+| 面试准备者 | 第31章 80 题直接演练 |
 
-每一章都包含：
-- **方法论**：为什么这么做
-- **操作步骤**：具体怎么做（分步到可复现）
-- **代码示例**：Python / SQL 可直接运行
-- **常见坑**：真实项目中踩过的坑
-- **检查清单**：交付前自检
+### 怎么读
 
-## 全书目录
+- **初学者**：按章节顺序读（01 → 31），每章配合同目录下 `code/` 的代码跑一遍
+- **有经验者**：按需查阅目录，直接跳到对应章节
+- **面试者**：重点刷第31章 + 第16章项目案例
 
-| 章节 | 主题 | 核心内容 |
-|------|------|----------|
-| [01](01-data-analysis-foundations.md) | 数据分析基础与思维框架 | 数据分析是什么、分析思维、问题拆解、经典模型 |
-| [02](02-data-collection.md) | 数据获取与采集 | SQL取数、爬虫、API、日志、埋点、第三方数据 |
-| [03](03-data-cleaning.md) | 数据清洗与预处理 | 缺失值、异常值、重复值、格式统一、特征工程基础 |
-| [04](04-exploratory-data-analysis.md) | 探索性数据分析（EDA） | 单变量/双变量/多变量分析、分布、相关、分组 |
-| [05](05-statistical-analysis.md) | 统计分析与假设检验 | 描述统计、推断统计、t检验、卡方、方差分析、非参数 |
-| [06](06-data-visualization.md) | 数据可视化 | 图表选型、Matplotlib/Seaborn/Plotly、配色、仪表板 |
-| [07](07-sql-for-data-analysis.md) | SQL数据分析实战 | 窗口函数、CTE、性能优化、常见查询模板 |
-| [08](08-python-pandas-numpy.md) | Python数据分析（Pandas/NumPy） | DataFrame操作、分组聚合、合并、时间序列、性能优化 |
-| [09](09-business-analysis-methodology.md) | 业务数据分析方法论 | 指标体系、漏斗分析、留存分析、RFM、杜邦分析 |
-| [10](10-ab-testing-causal-inference.md) | A/B测试与因果推断 | 实验设计、样本量、显著性、辛普森悖论、DID、PSM |
-| [11](11-user-behavior-analysis.md) | 用户行为分析 | 用户画像、路径分析、Session、活跃分析、用户分层 |
-| [12](12-sales-revenue-analysis.md) | 销售与营收分析 | GMV拆解、客单价、复购、渠道分析、同比环比 |
-| [13](13-operations-analysis.md) | 运营数据分析 | 活动分析、Push/推送效果、内容分析、增长黑客指标 |
-| [14](14-reporting-automation.md) | 数据报表与自动化 | 报表体系、定时任务、邮件推送、Tableau/Power BI |
-| [15](15-ml-for-data-analysis.md) | 机器学习在数据分析中的应用 | 分类回归聚类、异常检测、预测、特征重要性 |
-| [16](16-real-world-case-studies.md) | 真实项目实战案例 | 电商、内容、金融、SaaS 四个完整案例全流程 |
-| [17](17-tools-ecosystem.md) | 数据分析工具生态 | Excel→SQL→Python→BI→数仓全栈工具链对比与选型 |
-| [18](18-career-interview-guide.md) | 职业发展与面试指南 | 技能树、简历、面试题、晋升路径、薪资参考 |
+---
 
-## 适合谁读
+## 📚 章节目录
 
-- **转行/应届生**：从第一章顺序读到第十八章，配合代码动手练
-- **业务分析师/运营**：重点读 09-13 章业务方法论
-- **数据分析师**：查漏补缺，重点读 05、10、15 章高阶内容
-- **数据产品/PM**：重点读 09、14、18 章
+### 🌱 第一篇：基础入门（第01-03章）
+- **第01章** 数据分析基础与思维框架
+- **第02章** 数据获取与采集
+- **第03章** 数据清洗与预处理
 
-## 环境准备
+### 🔧 第二篇：工具技能（第04-08章）
+- **第04章** 探索性数据分析（EDA）
+- **第05章** 统计分析与假设检验
+- **第06章** 数据可视化
+- **第07章** SQL 数据分析实战
+- **第08章** Python 数据分析（Pandas/NumPy）
+
+### 💼 第三篇：业务分析（第09-14章）
+- **第09章** 业务数据分析方法论
+- **第10章** A/B 测试与因果推断
+- **第11章** 用户行为分析
+- **第12章** 销售与营收分析
+- **第13章** 运营数据分析
+- **第14章** 数据报表与自动化
+
+### 🤖 第四篇：机器学习核心（第15-23、28章）
+- **第15章** 机器学习在数据分析中的应用
+- **第19章** 机器学习导论：问题类型与建模流程
+- **第20章** 特征工程实战
+- **第21章** 监督学习：回归算法
+- **第22章** 监督学习：分类算法
+- **第23章** 无监督学习：聚类与降维
+- **第28章** 模型评估与调优
+
+### 🎯 第五篇：专题算法（第24-27章）
+- **第24章** 时间序列预测
+- **第25章** 异常检测
+- **第26章** NLP 在数据分析中的应用
+- **第27章** 推荐系统基础
+
+### 🏗️ 第六篇：工程与落地（第29-30章）
+- **第29章** MLOps 与模型部署
+- **第30章** 数据工程基础
+
+### 🚀 第七篇：实战与求职（第16-18章、第31章）
+- **第16章** 真实项目实战案例（6个完整项目）
+- **第17章** 数据分析工具生态
+- **第18章** 职业发展与面试指南
+- **第31章** 数据分析高频面试80题与答案
+
+---
+
+## 🛠️ 配套代码
+
+所有代码位于 [`code/`](code/) 目录，可直接运行：
 
 ```bash
-# Python 环境推荐
-python >= 3.10
-pandas >= 2.0
-numpy >= 1.24
-matplotlib >= 3.7
-seaborn >= 0.12
-scipy >= 1.10
-scikit-learn >= 1.3
-plotly >= 5.15
-sqlalchemy >= 2.0
+# 安装依赖
+pip install pandas numpy scikit-learn matplotlib seaborn statsmodels scipy
 
-# 一键安装
-pip install pandas numpy matplotlib seaborn scipy scikit-learn plotly sqlalchemy jupyter
+# 运行任意示例
+python code/21-regression/housing_price_prediction.py
+python code/22-classification/churn_prediction.py
+python code/24-time-series/sales_forecast.py
+python code/25-anomaly-detection/fraud_detection.py
+python code/26-nlp/sentiment_analysis.py
+python code/27-recommender/movie_recommender.py
+
+# 6个端到端项目
+python code/16-projects/project1-churn-prediction/main.py
+python code/16-projects/project2-sales-forecast/main.py
+python code/16-projects/project3-sentiment-analysis/main.py
+python code/16-projects/project4-fraud-detection/main.py
+python code/16-projects/project5-customer-segmentation/main.py
+python code/16-projects/project6-ab-test-analysis/main.py
 ```
 
-## 开源协议
+代码中使用的数据均为：
+- scikit-learn 内置公开数据集
+- `numpy.random` 生成的模拟数据
+- 少量手写演示文本
 
-MIT License — 可自由使用、修改、分发，保留原作者署名即可。
+**无需下载任何私有数据即可跑通。**
 
 ---
 
-*如果这本手册对你有帮助，欢迎 Star ⭐ 和贡献 PR。*
+## 📊 手册统计
+
+| 指标 | 数值 |
+|------|------|
+| 章节数 | 31 章 |
+| 总字数 | 40 万+ 中文字符 |
+| 配套代码目录 | 9 个模块 |
+| 端到端项目 | 6 个 |
+| 面试题 | 80 道 |
+| 代码可运行 | ✅ |
+
+---
+
+## 🤝 贡献
+
+欢迎 Issue 和 PR：
+
+1. Fork 本仓库
+2. 创建特性分支：`git checkout -b feature/your-chapter`
+3. 提交修改：`git commit -m 'Add some chapter'`
+4. 推送：`git push origin feature/your-chapter`
+5. 提交 Pull Request
+
+### 写作规范
+
+- 每章 3000-8000 中文字符
+- 概念讲解 + 可运行代码 + 实战案例 + 常见坑 + 小结
+- 代码块标注语言（```python / ```sql）
+- 章节结尾有"下一章"链接
+- 全中文写作
+
+---
+
+## 📄 License
+
+[MIT License](LICENSE)，自由使用、转载、修改，但请保留原作者署名。
+
+---
+
+> 如果这份手册对你有帮助，欢迎 ⭐ Star 支持！
+>
+> 仓库地址：[https://github.com/lizhengyang-byte/data-analysis-handbook](https://github.com/lizhengyang-byte/data-analysis-handbook)
