@@ -214,6 +214,8 @@ colors_colorblind = [
 ]
 ```
 
+![推荐配色方案](assets/images/ch06-color-palette.png)
+
 ### 6.4.2 设计原则
 
 **DO（应该做）：**
@@ -229,6 +231,8 @@ colors_colorblind = [
 - 彩虹色（不专业）
 - 双Y轴（误导读者）
 - 花哨的渐变和阴影
+
+![好图vs坏图对比](assets/images/ch06-good-bad-chart.png)
 
 ---
 

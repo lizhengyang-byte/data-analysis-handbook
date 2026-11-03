@@ -72,6 +72,8 @@ plt.show()
 - 有没有长尾？长尾占多少？
 - 均值和中位数差多少？（差很多说明有偏）
 
+![订单金额分布](assets/images/ch04-histogram.png)
+
 ### 4.2.2 分类型变量
 
 ```python
@@ -121,6 +123,8 @@ print(f"Spearman相关系数: {df['age'].corr(df['order_amount'], method='spearm
 
 **注意：相关不等于因果！** 冰淇淋销量和溺水人数高度相关，但都是因为夏天。
 
+![散点图相关性](assets/images/ch04-scatter-correlation.png)
+
 ### 4.3.2 数值 vs 分类
 
 ```python
@@ -133,6 +137,8 @@ plt.show()
 # 分组统计
 print(df.groupby('city_tier')['order_amount'].agg(['mean', 'median', 'std', 'count']))
 ```
+
+![分城市箱线图](assets/images/ch04-boxplot-city.png)
 
 **小提琴图（更直观的分布）：**
 
@@ -179,6 +185,8 @@ plt.show()
 - 对角线都是1（自己和自己相关）
 - 找深色块：哪些变量高度相关？
 - 多重共线性：两个自变量高度相关（>0.8），建模时要注意
+
+![相关系数矩阵](assets/images/ch04-correlation-matrix.png)
 
 ### 4.4.2 分组对比
 

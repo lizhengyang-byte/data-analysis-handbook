@@ -15,6 +15,8 @@
 
 **核心思想：** 我们通常只能看到样本，想知道总体的规律。抽样有随机性，所以需要用统计方法判断"观察到的差异是不是显著的"。
 
+![正态分布](assets/images/ch05-normal-distribution.png)
+
 ### 5.1.2 关键概念
 
 - **总体（Population）**：所有研究对象
@@ -63,6 +65,8 @@ Step 5: 业务结论
 **常见误解：**
 - ❌ "p=0.03意味着H1为真的概率是97%"
 - ✅ "p=0.03意味着如果H0为真，出现当前结果的概率是3%"
+
+![p值拒绝域](assets/images/ch05-pvalue-illustration.png)
 
 ---
 
@@ -254,6 +258,8 @@ ci_b = proportion_confint(1500, 10000, alpha=0.05)
 print(f"A版转化率95%CI: [{ci_a[0]:.4f}, {ci_a[1]:.4f}]")
 print(f"B版转化率95%CI: [{ci_b[0]:.4f}, {ci_b[1]:.4f}]")
 ```
+
+![置信区间](assets/images/ch05-confidence-interval.png)
 
 ---
 

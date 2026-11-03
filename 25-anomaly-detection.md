@@ -143,6 +143,8 @@ score  = iso.decision_function(X)   # 越小越异常
 - `contamination` 是先验，选错会偏；
 - 多模态数据（多个密集簇）混在一起时表现一般。
 
+![异常检测结果](assets/images/ch25-anomaly-scatter.png)
+
 ---
 
 ## 25.6 One-Class SVM

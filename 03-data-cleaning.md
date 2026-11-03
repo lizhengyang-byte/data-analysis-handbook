@@ -161,6 +161,8 @@ df['income_is_missing'] = df['income'].isnull().astype(int)
 df['income'] = df['income'].fillna(df['income'].median())
 ```
 
+![缺失值热力图](assets/images/ch03-missing-heatmap.png)
+
 ---
 
 ## 3.3 异常值处理
@@ -184,6 +186,8 @@ def detect_outliers_iqr(df, col):
 # 使用
 outliers_income = detect_outliers_iqr(df, 'income')
 ```
+
+![箱线图识别异常值](assets/images/ch03-outlier-boxplot.png)
 
 **方法2：Z-Score法**
 

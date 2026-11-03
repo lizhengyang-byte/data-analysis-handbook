@@ -57,6 +57,8 @@ plt.show()
 
 看懂分解图能帮你选模型：趋势强用 Holt，季节强用 Holt-Winters 或 SARIMA。
 
+![时序分解](assets/images/ch24-ts-decomposition.png)
+
 ---
 
 ## 24.3 移动平均与指数平滑
@@ -280,6 +282,8 @@ print(f"MAE={mae:.2f}, RMSE={rmse:.2f}, MAPE={mape:.1f}%")
 3. 重复 N 次，把所有预测拼起来算指标
 
 这是时序评估的黄金标准，避免"刚好那段好预测"的偶然性。
+
+![预测vs实际](assets/images/ch24-forecast-vs-actual.png)
 
 ---
 

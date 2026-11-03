@@ -115,6 +115,8 @@ df['cluster'] = kmeans.fit_predict(X)  # 自己发现分组
 - "把用户分成几类做精细化运营" → 无监督学习 → 聚类
 - "从100个行为指标里找出主要的3个维度" → 无监督学习 → 降维
 
+![算法选择决策图](assets/images/ch19-algorithm-map.png)
+
 ---
 
 ## 19.3 标准建模流程：CRISP-DM框架
@@ -170,6 +172,8 @@ CRISP-DM（Cross-Industry Standard Process for Data Mining）是行业通用的�
 **第六步：部署和监控**
 - 把模型做成每日任务，每天给运营输出一份"高流失风险用户名单"
 - 持续监控：一个月后看看这些用户里真的有多少流失了，效果衰减就重新训练
+
+![ML建模流程](assets/images/ch19-ml-timeline.png)
 
 ---
 

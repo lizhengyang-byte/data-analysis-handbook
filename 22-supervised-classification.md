@@ -244,6 +244,8 @@ cm = confusion_matrix(y_test, y_pred)
 print(cm)
 ```
 
+![混淆矩阵](assets/images/ch22-confusion-matrix.png)
+
 ### 22.7.2 四大核心指标
 
 - **准确率 Accuracy** = (TP+TN) / 全部。类别不平衡时这个指标会骗人——99% 的负类，全预测负类准确率也有 99%。
@@ -263,6 +265,8 @@ print("PR-AUC:", average_precision_score(y_test, y_prob))
 **经验法则：**
 - 类别相对均衡 → 看 ROC-AUC
 - 正负类比例悬殊（1:100 以上）→ 看 PR-AUC，ROC-AUC 会虚高
+
+![多模型ROC对比](assets/images/ch22-roc-curve.png)
 
 ---
 

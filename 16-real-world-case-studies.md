@@ -57,6 +57,8 @@ GMV = 付费用户数 × 客单价
 2. 新用户Onboarding流程优化
 3. 建立渠道质量监控指标
 
+![销售预测图](assets/images/ch16-project2-forecast.png)
+
 ---
 
 ## 16.2 案例二：APP留存率下降
@@ -82,6 +84,8 @@ GMV = 付费用户数 × 客单价
 - 修复崩溃版本上线后，留存回升到39%
 
 **结论：** 不是留存策略问题，是Android新版本Onboarding页面有严重bug，导致用户崩溃退出。
+
+![欺诈检测散点图](assets/images/ch16-project4-fraud-scatter.png)
 
 ---
 
@@ -109,6 +113,8 @@ GMV = 付费用户数 × 客单价
 
 **建议：** 优化新用户Onboarding，引导用户关注更多创作者。
 
+![情感分析结果](assets/images/ch16-project3-sentiment.png)
+
 ---
 
 ## 16.4 案例四：SaaS产品续费分析
@@ -133,6 +139,8 @@ GMV = 付费用户数 × 客单价
    - 跟进100个高风险客户，能挽回20个
    - 每个客户年费5万，挽回20个就是100万
    - 客户成功团队成本20万，ROI = 400%
+
+![流失预测ROC曲线](assets/images/ch16-project1-churn-roc.png)
 
 ---
 
@@ -289,6 +297,8 @@ plt.savefig('cohort_android_douyin.png', dpi=150)
 - **分维度拆解非常重要**——全量数据看不出问题，拆到渠道、设备、版本后，问题立刻暴露
 - **改版要做灰度发布**——全量上线一个大版本，出问题时影响面太大；先小流量测试，观察留存等核心指标没问题再放量
 - **算法优化不能只看整体指标**——新模型在老用户上好，但对新用户可能是灾难，要分人群评估
+
+![客户分群聚类图](assets/images/ch16-project5-segmentation.png)
 
 ---
 
@@ -453,6 +463,8 @@ print(layered)
 - **p 值显著不等于业务显著**——提升 0.7pp 看起来小，但乘以 100 万 DAU 就是每天多 7000 次点击，价值很大
 - **A/B 测试要覆盖完整周期**——跑 3 天可能包含周末效应，跑 14 天覆盖完整两周，结论更可靠
 - **警惕 novelty effect**——新功能刚上线用户新鲜，效果可能偏高；上线后要持续观察 2-4 周，确认效果稳定
+
+![AB测试结果](assets/images/ch16-project6-ab-result.png)
 
 ---
 

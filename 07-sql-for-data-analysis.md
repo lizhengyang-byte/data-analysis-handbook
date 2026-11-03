@@ -30,6 +30,8 @@ FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT
 
 **为什么重要：** 你在SELECT里定义的别名，不能在WHERE里用，但可以在ORDER BY里用。
 
+![SQL执行顺序](assets/images/ch07-sql-execution-order.png)
+
 ### 7.1.2 JOIN的类型
 
 ```sql

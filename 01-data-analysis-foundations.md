@@ -95,6 +95,8 @@ GMV
 - ❌ "GMV下降是因为产品不好、运营不行、市场竞争大" — 不可量化，无法取数
 - ❌ "GMV = 流量 × 转化率 × 客单价" — 看似对，但流量来源混杂，无法定位问题
 
+![MECE拆解树](assets/images/ch01-mece-tree.png)
+
 ### 1.2.2 对比思维
 
 **没有对比就没有分析。** 一个孤立的数字没有任何意义。
@@ -267,6 +269,8 @@ Step 7: 跟进落地（Act）
 | Retention（留存） | 次日/7日/30日留存率 | 产品粘性 |
 | Revenue（营收） | ARPU、LTV、GMV | 变现效率 |
 | Referral（传播） | K因子、分享率 | 自增长 |
+
+![AARRR漏斗模型](assets/images/ch01-aarrr-funnel.png)
 
 ### 1.4.2 RFM用户价值模型
 

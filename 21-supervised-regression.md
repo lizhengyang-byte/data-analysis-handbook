@@ -65,6 +65,8 @@ new_house = np.array([[80, 2]])
 print(f"预测房价: {model.predict(new_house)[0]:.1f} 万")
 ```
 
+![线性回归拟合](assets/images/ch21-regression-fit.png)
+
 ### 21.2.2 假设条件（Gauss-Markov假设）
 
 线性回归不是随便用的，它有几个假设，违反了效果会打折扣：
@@ -79,6 +81,8 @@ print(f"预测房价: {model.predict(new_house)[0]:.1f} 万")
 - 数据量足够大时，假设稍微违反也能用
 - 先做EDA（参见第04章探索性数据分析），看看散点图有没有明显的非线性
 - 多重共线性严重时，用正则化回归（Ridge/Lasso）
+
+![残差图](assets/images/ch21-residual-plot.png)
 
 ### 21.2.3 系数解释
 

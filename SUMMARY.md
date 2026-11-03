@@ -51,6 +51,12 @@
 - [第17章 数据分析工具生态](17-tools-ecosystem.md)
 - [第18章 职业发展与面试指南](18-career-interview-guide.md)
 - [第31章 数据分析高频面试80题与答案](31-career-interview-80.md)
+- [第32章 Python绘图全教程](32-plotting-tutorial.md)
+
+## 📊 配图
+
+- 所有章节配图位于 `assets/images/` 目录（共60张PNG）
+- 图表生成脚本：[code/generate_all_charts.py](code/generate_all_charts.py)（一键重新生成所有图）
 
 ## 📁 配套代码
 

@@ -62,6 +62,8 @@ plt.title("K-Means 聚类结果")
 plt.show()
 ```
 
+![K-Means聚类效果](assets/images/ch23-kmeans-cluster.png)
+
 ### 23.2.3 K 值怎么选
 
 K 是超参数，必须人为指定。两种常用方法：
@@ -177,6 +179,8 @@ print("每主成分解释的方差比例:", pca.explained_variance_ratio_)
 4. **共线性处理**：特征之间高度相关时，PCA 能把它们合成正交成分。
 
 **坑：** PCA 是线性方法，对尺度敏感（必须先标准化）；它只保留方差最大的方向，**对方差小但有判别力的特征可能不友好**——所以分类/回归任务上不要盲目 PCA 后再建模。
+
+![PCA降维可视化](assets/images/ch23-pca-scatter.png)
 
 ---
 

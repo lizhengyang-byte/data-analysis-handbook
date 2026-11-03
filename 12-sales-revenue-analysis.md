@@ -44,6 +44,8 @@ GMV = 付费用户数 × 客单价
 
 **结论：** GMV下降主要是因为新用户付费率下降了5个百分点，而不是流量少了。
 
+![GMV瀑布图](assets/images/ch12-gmv-waterfall.png)
+
 ---
 
 ## 12.2 客单价分析
@@ -112,6 +114,8 @@ print(user_orders['gap_days'].describe())
 - **不要用环比**：大促月和非大促月没有可比性
 - **要用同比**：和去年同期大促比
 - **还要看大促前后的蓄水/透支效应**
+
+![同比环比对比](assets/images/ch12-yoy-mom.png)
 
 ---
 
